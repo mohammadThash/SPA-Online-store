@@ -10,10 +10,6 @@ function Sidebar({ query, setQuery }) {
 
     const category = event.target.innerText.toLowerCase();
     setQuery((query) => createQueryObject(query, { category }));
-    // console.dir(category);
-    // const filteredProducts = products.filter((product) =>
-    //   setDisplay(query.category === category)
-    // );
   };
   return (
     <div className={styles.sidebar}>
